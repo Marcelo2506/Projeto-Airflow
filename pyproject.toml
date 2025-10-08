@@ -6,8 +6,11 @@ authors = [
     {name = "Marcelo Ricardo",email = "marcello.8@hotmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.14"
 dependencies = [
+    "apache-airflow (>=3.1.0,<4.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "streamlit (>=1.50.0,<2.0.0)"
 ]
 
 

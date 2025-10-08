@@ -1,0 +1,6 @@
+project:
+    name: projeto-airflow
+
+docker:
+    ports:
+        postgres: 55432
