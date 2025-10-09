@@ -1,0 +1,45 @@
+from time import sleep
+
+from airflow.decorators import dag, task
+
+from datetime import datetime
+
+
+@dag(
+    dag_id="sexta_dag",
+    description="Minha ETL",
+    schedule="* * * * *",
+    start_date=datetime(2025, 10, 8),
+    catchup=False  # backfill
+)
+def minha_sexta_dag():
+
+    @task
+    def primeira_atividade():
+        print("minha primeira atividade! - Hello World")
+        sleep(2)
+
+    @task
+    def segunda_atividade():
+        print("minha segunda atividade! - ¡Hola, mundo!")
+        sleep(2)
+
+    @task
+    def terceira_atividade():
+        print("minha terceira atividade - Bonjour, le monde !")
+        sleep(2)
+
+    @task
+    def quarta_atividade():
+        print("pipeline finalizou")
+
+    t1 = primeira_atividade()
+    t2 = segunda_atividade()
+    t3 = terceira_atividade()
+    t4 = quarta_atividade()
+
+    t1.set_downstream([t2, t3])
+    t3.set_upstream(t4)
+
+
+minha_sexta_dag()
