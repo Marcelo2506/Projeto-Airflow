@@ -1,11 +1,11 @@
-# Projeto-Airflow
-É uma excelente adição\! Incluirei uma seção detalhada sobre como o usuário pode fazer o *setup* e rodar o projeto localmente usando Docker e Astro CLI.
 
 ## Pokémon Data Ingestion and Database Migration Pipeline
 
 Este projeto demonstra um pipeline de engenharia de dados completo, que coleta dados de uma API externa, valida-os, armazena-os em um banco de dados em nuvem e, em seguida, realiza uma migração de dados em lote para um banco de dados local.
 
 Utilizamos uma combinação robusta de tecnologias modernas para construir, orquestrar e implantar esta solução.
+
+Também adicionei alguns exemplos de formas diferentes de criar dags e como ordenar as tasks.
 
 ### 💻 Tecnologias Utilizadas
 
