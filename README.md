@@ -152,3 +152,8 @@ Visão da interface padrão do Airflow, confirmando o agendamento e o status de 
 Visão da plataforma Astronomer/Astro CLI, demonstrando o ambiente de deploy gerenciado na nuvem.
 
 ![Imagem da interface da Astronomer mostrando as DAGs, o status de execução ('Successful', 'Failed', 'In Progress') e o agendamento.](pics/astro%20cli.jpg)
+
+#### 5. Fluxograma do Projeto Completo
+Como as ferramentas funcionam e ordem de processamento
+
+![Como as ferramentas funcionam e ordem de processamento](pics/Texto%20do%20seu%20parágrafo.png)
